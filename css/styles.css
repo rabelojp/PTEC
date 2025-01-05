@@ -1603,6 +1603,12 @@ a:hover.back-to-top {
 
 
 	/* Header */
+	@media (max-width: 768px) {
+		.header {
+			background-size: contain; /* Mantém a proporção e se ajusta ao container */
+			background-attachment: scroll; /* Desativa o efeito parallax */
+		}
+	}
 	.header .text-container {
 		margin-bottom: 4rem;
 	}
