@@ -744,7 +744,11 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background-color: #003A91;
+	background-image: url("../images/hero-bg.png");
+	background-repeat: no-repeat; /* Impede a repetição da imagem */
+	background-size: cover; /* Faz a imagem cobrir toda a área */
+	background-position: center; /* Centraliza a imagem */
+	background-attachment: fixed; /* Torna o fundo fixo ao rolar a página */
 }
 
 .header .header-content {
