@@ -1,6 +1,6 @@
 .floating-btn {
 	position: fixed;
-	bottom: 6rem;
+	bottom: 2rem;
 	right: 10px;
 	z-index: 9999;
 	width: 80px;
@@ -25,7 +25,7 @@
 	.floating-btn {
 	  width: 50px;
 	  height: 50px;
-	  bottom: 8rem;
+	  bottom: 2rem;
 	  right: 15px;
 	}
   
@@ -1467,29 +1467,6 @@ input[type='checkbox'] {
 	color: #f3f7fd;
 	text-decoration: none;
 }
-
-
-/**********************************/
-/*     16. Back To Top Button     */
-/**********************************/
-a.back-to-top {
-	position: fixed;
-	z-index: 999;
-	right: 0.75rem;
-	bottom: 0.75rem;
-	display: none;
-	width: 2.625rem;
-	height: 2.625rem;
-	border-radius: 1.875rem;
-	background: #4f3cda url("../images/up-arrow.png") no-repeat center 47%;
-	background-size: 1.125rem 1.125rem;
-	text-indent: -9999px;
-}
-
-a:hover.back-to-top {
-	background-color: #4332c5; 
-}
-
 
 /***************************/
 /*     17. Extra Pages     */
