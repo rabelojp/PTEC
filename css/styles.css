@@ -793,7 +793,6 @@ input[type='checkbox'] {
 	background-repeat: no-repeat; /* Impede a repetição da imagem */
 	background-size: cover; /* Faz a imagem cobrir toda a área */
 	background-position: center; /* Centraliza a imagem */
-	background-attachment: fixed; /* Torna o fundo fixo ao rolar a página */
 }
 
 .header .header-content {
