@@ -1,3 +1,14 @@
+@media (min-width: 768px) {
+	/* Para dispositivos com largura mínima de 768px (geralmente tablets ou desktops) */
+	meta[name="viewport"] {
+	  content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no";
+	}
+
+	#aws_text {
+	  display: none;
+	}
+  }
+
 .floating-btn {
 	position: fixed;
 	bottom: 2rem;
