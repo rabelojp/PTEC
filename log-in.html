@@ -2,247 +2,121 @@
 <html lang="pt-BR">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no">
     
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="A PTEC Informática oferece serviços de montagem de PC Gamer, planejamento de setups, limpeza e manutenção de computadores em Sobradinho, Sobradinho 2, Condomínio Serra Azul e Grande Colorado. Qualidade e confiança ao seu alcance!">
-    <meta name="author" content="PTEC Informática - Sobradinho-DF">
-
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-    <meta property="og:site_name" content="PTEC Informática" /> <!-- Nome do site -->
-    <meta property="og:site" content="https://www.ptecinformatica.com.br" /> <!-- Link do site -->
-    <meta property="og:title" content="PTEC Informática - Assistência Técnica em Sobradinho-DF" /> <!-- Título do post compartilhado -->
-    <meta property="og:description" content="Montagem de PC Gamer, planejamento de setups, e manutenção de computadores para Sobradinho, Sobradinho 2, Condomínio Serra Azul e Grande Colorado. Confiança e qualidade ao seu alcance!" /> <!-- Descrição do post -->
-    <meta property="og:image" content="https://www.ptecinformatica.com.br/assets/images/og-image.jpg" /> <!-- Link para a imagem -->
-    <meta property="og:url" content="https://www.ptecinformatica.com.br" /> <!-- URL de destino do post -->
-    <meta property="og:type" content="website" />
-
-
-    <!-- Website Title -->
     <title>Links - PTEC Informática</title>
     
-    <!-- Styles -->
+    <!-- Fonts and Styles -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
+    <link href="css/styles.css" rel="stylesheet">
     <link rel="icon" href="images/favicon.png">
 
-
-    <!-- Estilos -->
-
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden; /* Evita faixa branca horizontal */
+        }
 
-:root {
-    --text-color: white;
-    --bg-url: url(./Assets/bg-teste.png);
-    --stroke-color: rgba(255, 255, 255, 0.5);
-    --surface-color: rgba(255, 255, 255, 0.07);
-    --highlight-color: rgba(255, 255, 255, 0.2);
-    --switch-bg-url: url(./Assets/moon-stars.svg);
-}
+        :root {
+            --text-color: white;
+            --bg-url: url(./Assets/bg-teste.png);
+            --stroke-color: rgba(255, 255, 255, 0.5);
+            --surface-color: rgba(255, 255, 255, 0.07);
+            --highlight-color: rgba(255, 255, 255, 0.2);
+        }
 
-body {
-    min-height: 100vh; /* Garante que o body ocupe toda a altura visível */
-    background: var(--bg-url);
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-position: center;
-    display: flex; /* Para alinhar elementos filhos */
-    flex-direction: column; /* Elementos dentro seguem ordem vertical */
-}
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: var(--bg-url) no-repeat center center / cover;
+            font-family: 'Open Sans', sans-serif;
+        }
 
-body * {
-    font-family: 'Inter', sans-serif;
-    color: var(--text-color);
-}
+        #container {
+            max-width: 588px;
+            width: 100%;
+            padding: 24px;
+        }
 
-#container {
-    width: 100%;
-    max-width: 588px;
-    margin: 56px auto 0px;
-    padding: 0 24px;
-    flex: 1; /* Faz o contêiner ocupar o espaço restante */
-}
+        #profile {
+            text-align: center;
+        }
 
-#profile {
-    text-align: center;
-    padding: 24px;
-}
+        #profile img {
+            width: 121px;
+        }
 
-#profile img {
-    width: 121px;
-}
+        ul {
+            list-style: none;
+            padding: 24px 0;
+        }
 
-#profile p {
-    font-weight: 500;
-    line-height: 24px;
-    margin-top: 8px;
-}
+        ul li a {
+            display: block;
+            padding: 16px;
+            margin: 8px 0;
+            background: var(--surface-color);
+            color: var(--text-color);
+            text-decoration: none;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid var(--stroke-color);
+            transition: background 0.3s, transform 0.2s;
+        }
 
-#switch {
-    position: relative;
-    width: 64px;
-    margin: 4px auto;
-}
+        ul li a:hover {
+            background: var(--highlight-color);
+            transform: scale(1.05);
+        }
 
-#switch button {
-    width: 32px;
-    height: 32px;
-    background: white var(--switch-bg-url) no-repeat center;
-    border: 0;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: 1;
-    transform: translateY(-50%);
-    animation: slide-back .2s;
-}
+        #social-links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            padding: 24px 0;
+        }
 
-.light #switch button {
-    animation: slide-in 0.4s forwards;
-}
-
-#switch button:hover {
-    outline: 8px solid var(--highlight-color);
-}
-
-#switch span {
-    display: block;
-    width: 64px;
-    height: 24px;
-    background: var(--surface-color);
-    border: 1px solid var(--stroke-color);
-    backdrop-filter: blur(4px);
-    border-radius: 9999px;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 24px 0;
-}
-
-ul li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 24px;
-    background: var(--surface-color);
-    border: 1px solid var(--stroke-color);
-    border-radius: 8px;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    text-decoration: none;
-    font-weight: 500;
-    transition: background 0.3s;
-}
-
-ul li a:hover {
-    background: var(--surface-color-hover);
-    border: 1.5px solid var(--text-color);
-}
-
-#social-links {
-    display: flex;
-    justify-content: center;
-    padding: 24px 0;
-    font-size: 24px;
-}
-
-#social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px;
-    transition: background 0.3s;
-    border-radius: 50%;
-}
-
-#social-links a:hover {
-    background: var(--highlight-color);
-}
-
+        #social-links a {
+            font-size: 24px;
+            color: var(--text-color);
+            text-decoration: none;
+        }
     </style>
-
-    
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
-    
-    <!-- Preloader -->
-	<div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
-    </div>
-    <!-- end of preloader -->
-
-
+<body>
     <div id="container">
-        <a target="_blank" href="https://www.instagram.com/ptec_sob/">
         <div id="profile">
             <img src="./Assets/avatar_moon.png" alt="Logo PTEC Informática">
             <p><a style="text-decoration: none;" href="https://www.instagram.com/ptec_sob/">@ptec_sob</a></p>
+        </div>
 
-        </div></a>
-        
-            <ul>
+        <ul>
+            <li><a href="https://wa.me/556199392424?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20or%C3%A7amento" target="_blank">Faça Seu Orçamento</a></li>
+            <li><a href="#">Nossos Serviços</a></li>
+            <li><a href="https://www.instagram.com/ptec_sob/" target="_blank">Nosso Instagram</a></li>
+            <li><a href="https://www.youtube.com/@rabelo.jpaulo" target="_blank">Nosso Facebook</a></li>
+        </ul>
 
-                <li>
-                    <a href="https://wa.me/556199392424?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20or%C3%A7amento" target="_blank">Faça Seu Orçamento</a>
-                </li>
-                <li>
-                    <a href="#">Nossos Serviços</a>
-                </li>
-                
-
-                <li>
-                    <a href="https://www.instagram.com/ptec_sob/" target="_blank">Nosso Instagram</a>
-                </li>
-                
-                <li>
-                    <a href="https://www.youtube.com/@rabelo.jpaulo" target="_blank">Nosso Facebook</a>
-                </li>
-            </ul>
-            
-
-            <div id="social-links">
-                <a href="https://www.instagram.com/rabelo.jp/"target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                
-                <a href="https://www.linkedin.com/in/rabelojp/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-
-                <a href="https://github.com/rabelojp" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-
-                <a href="https://www.instagram.com/ptec_sob/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
-
-            </div>
-    </div>  
-
+        <div id="social-links">
+            <a href="https://www.instagram.com/rabelo.jp/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/rabelojp/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://github.com/rabelojp" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.instagram.com/ptec_sob/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+        </div>
+    </div>
 
     <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
