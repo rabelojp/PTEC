@@ -73,11 +73,13 @@
             border-radius: 8px;
             border: 1px solid var(--stroke-color);
             transition: background 0.3s, transform 0.2s;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
         }
 
         ul li a:hover {
-            background: var(--highlight-color);
-            transform: scale(1.05);
+            background: var(--surface-color-hover);
+            border: 1.5px solid var(--text-color);
         }
 
         #social-links {
