@@ -23,6 +23,7 @@
             height: 100%;
             margin: 0;
             overflow-x: hidden; /* Evita faixa branca horizontal */
+            max-width: 100vw; /* Garante que a largura não ultrapasse a viewport */
         }
 
         :root {
@@ -78,7 +79,7 @@
         }
 
         ul li a:hover {
-            background: var(--surface-color-hover);
+            background: var(--highlight-color);
             border: 1.5px solid var(--text-color);
         }
 
@@ -98,10 +99,9 @@
             border-radius: 50%;
         }
 
-        #social-links a:hover{
+        #social-links a:hover {
             background: var(--highlight-color);
         }
-        
     </style>
 </head>
 <body>
@@ -112,22 +112,4 @@
         </div>
 
         <ul>
-            <li><a href="https://wa.me/556199392424?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20or%C3%A7amento" target="_blank">Faça Seu Orçamento</a></li>
-            <li><a href="#">Nossos Serviços</a></li>
-            <li><a href="https://www.instagram.com/ptec_sob/" target="_blank">Nosso Instagram</a></li>
-            <li><a href="https://www.youtube.com/@rabelo.jpaulo" target="_blank">Nosso Facebook</a></li>
-        </ul>
-
-        <div id="social-links">
-            <a href="https://www.instagram.com/rabelo.jp/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="https://www.linkedin.com/in/rabelojp/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-            <a href="https://github.com/rabelojp" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-            <a href="https://www.instagram.com/ptec_sob/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
-        </div>
-    </div>
-
-    <!-- Scripts -->
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-</body>
-</html>
+            <li><a href="https://wa.me/556199392424?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20or
